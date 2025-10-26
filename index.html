@@ -64,14 +64,16 @@
             font-size: 14px;
             border: none;
             border-radius: 20px;
-            transition: background-color 0.3s ease;
             cursor: pointer;
+            transition: background-color 0.3s ease;
             -webkit-tap-highlight-color: transparent;
             -webkit-appearance: none;
+            text-decoration: none;
         }
 
         .button:hover {
             background-color: #1a1a1a;
+            border-radius: 20px;
         }
 
         .button:active {
@@ -92,8 +94,8 @@
     <h1>Welcome to Mena</h1>
     <p class="subtitle">Start by download our app</p>
 
-    <button class="button">Download for Android</button>
-    <button class="button">Download for iOS</button>
+    <a class="button" href="downloads/android_app_latest.apk" download>Download for Android</a>
+    <a class="button" href="downloads/ios_app_latest.ipa" download>Download for iOS</a>
 </div>
 </body>
 </html>

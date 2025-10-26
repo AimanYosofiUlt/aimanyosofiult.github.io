@@ -3,34 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Page</title>
+    <title>Welcome to Mena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet">
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F2F4F7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .logo {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 16px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            color: #3d4f5f;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            color: #7a8895;
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 8px;
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #1a1a1a;
+        }
+
+        .button:active {
+            transform: scale(0.98);
+        }
+
+        .button:last-child {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
-<body class="bg-light">
-
-<div class="container text-center mt-5">
-    <h1 class="mb-3">Download Our App</h1>
-    <p class="text-muted mb-4">
-        Choose your platform below to start your download.
-    </p>
-
-    <div class="d-grid gap-3 col-8 mx-auto">
-        <a href="/downloads/app-android.txt" class="btn btn-success btn-lg">
-            📱 Download for Android
-        </a>
-        <a href="http://droidfood.example.com" class="btn btn-primary btn-lg">
-            💻 Download for Windows
-        </a>
+<body>
+<div class="container">
+    <div class="logo">
+        <img src="mena_logo.png" alt="Mena Logo">
     </div>
 
-    <footer class="mt-5 text-muted">
-        &copy; 2025 My App. All rights reserved.
-    </footer>
-</div>
+    <h1>Welcome to Mena</h1>
+    <p class="subtitle">Start by download our app</p>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <button class="button">Download for Android</button>
+    <button class="button">Download for iOS</button>
+</div>
 </body>
 </html>
